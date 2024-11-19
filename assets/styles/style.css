@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    user-select: none;
+}
+
+:root {
+    --body: #f5f5dc;
+    --bodyAlternate: #f8f0e3;
+    --menu: #4e342e;
+    --menualternate: #3e2723;
+    --caixa: #d7ccc8;
+    --caixaAlternate: #bcaaa4;
+    --caixaAB: #8d6e63;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 5rem 9%;
+}
+
+.title {
+    color: #bfa76f;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.subtitle {
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+}

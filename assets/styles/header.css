@@ -1,0 +1,106 @@
+/*Cabeçalho das sessões*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 9%;
+    z-index: 10000;
+    background: #4e342e;
+}
+
+.header .logo {
+    font-weight: bolder;
+    color: #000;
+    font-size: 3rem;
+    color: #bfa76f;
+}
+
+.header .logo span {
+    color: #fff;
+}
+
+.header .navbar a {
+    display: inline-block;
+    padding: 1.5rem 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+.header .navbar a:hover {
+    background-color: #8d6e63;
+}
+
+#menu-btn {
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+        scroll-padding: 7rem;
+    }
+
+    .header {
+        padding: 0 2rem;
+    }
+
+    section {
+        padding: 3rem 2rem;
+    }
+
+    .home .slide {
+        padding: 2rem 5%;
+    }
+
+    .home .slide .content {
+        width: 50rem;
+    }
+
+    .home .slide .content h3 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-btn {
+        display: inline-block;
+    }
+
+    #menu-btn.fa-times {
+        transform: rotate(180deg);
+    }
+
+    .header {
+        padding: 2rem;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background: #000;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .navbar a {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
