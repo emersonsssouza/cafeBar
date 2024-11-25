@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
     <meta charset='utf-8'>
@@ -13,11 +13,18 @@
     <link rel='stylesheet' href='assets/styles/home.css'>
     <link rel="stylesheet" href="assets/styles/coofes.css">
     <link rel="stylesheet" href="assets/styles/modal.css">
+    <link rel="stylesheet" href="assets/styles/testimonials.css">
+    <link rel="stylesheet" href="assets/styles/footer.css">
+    <link rel="stylesheet" href="assets/styles/faq.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
 
 <body>
@@ -226,8 +233,143 @@
             </div>
         </section>
 
+        <section id="testimonials">
+            <div class="testItem">
+                <h1 class="title">Avaliação dos nossos clientes</h1>
+                <h3 class="subtitle">Aqui a sua satisfação é garantida</h3>
+            </div>
+
+            <div id="testContainer">
+                <div class="items">
+                    <img src="assets/icons/asmt01.png" alt="">
+                    <h2>Emerson Souza</h2>
+                    <div class="item-star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div id="date01"><!--Data em Js--></div>
+                    <p>Um local excelente pretendo voltar muitas vezes ainda!</p>
+                    <img src="assets/icons/review.png" alt="">
+                </div>
+
+                <div class="items">
+                    <img src="assets/icons/asmt02.png" alt="">
+                    <h2>Matheus Ferreira</h2>
+                    <div class="item-star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div id="date02"><!--Data em js--></div>
+                    <p>Um local excelente pretendo voltar muitas vezes ainda!</p>
+                    <img src="" alt="">
+                </div>
+
+                <div class="items">
+                    <img src="assets/icons/asmt03.png" alt="">
+                    <h2>Hellen Souza</h2>
+                    <div class="item-star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div id="date03"><!--Data em JS--></div>
+                    <p>Um local excelente pretendo voltar muitas vezes ainda!</p>
+                </div>
+
+                <div class="items">
+                    <img src="assets/icons/asmt04.png" alt="">
+                    <h2>Kaike Donizete</h2>
+                    <div class="item-star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div id="date04"><!--Data em Js--></div>
+                    <p>Um local excelente pretendo voltar muitas vezes ainda!</p>
+                </div>
+            </div>
+        </section>
+        <!--Duvidas-->
+        <section id="faq">
+            <h1 class="title">Perguntas Frequentes</h1>
+            <h3 class="subtitle">suas dúvidas serão respondidas com muita satisfação</h3>
+
+            <section class="faqItems" onclick="toggleFaq(this)">
+                <span>O que servimos no CafeBar?<i class="fas fa-plus"></i></span>
+
+                <div class="content_faq hidden">
+                    <p>
+                        Cafés Especiais: Variedades de cafés preparados com grãos selecionados, desde opções clássicas
+                        até bebidas criativas como cappuccinos personalizados.
+                        Bebidas Artesanais: Incluindo coquetéis, sucos naturais, e talvez opções alcoólicas especiais
+                        como vinhos e drinks.
+                    </p>
+                </div>
+            </section>
+
+            <section class="faqItems" onclick="toggleFaq(this)">
+                <span>Nossos preços?<i class="fas fa-plus"></i></span>
+                <div class="content_faq hidden">
+                    <p>
+                        Oferecerecemos uma faixa de preço mediana que mostre qualidade sem ser inacessível. Além de
+                        promoções por horário
+                    </p>
+                </div>
+            </section>
+
+            <section class="faqItems" onclick="toggleFaq(this)">
+                <span>Como é Nosso ambiente?<i class="fas fa-plus"></i></span>
+                <div class="content_faq hidden">
+                    <p>
+                        O ambiente do CafeBar foi projetado para oferecer uma experiência única que combine conforto,
+                        modernidade e um toque de sofisticação.
+                    </p>
+                </div>
+            </section>
+
+            <section class="faqItems" onclick="toggleFaq(this)">
+                <span>Como é nosso local?<i class="fas fa-plus"></i></span>
+                <div class="content_faq hidden">
+                    <p>
+                        Nosso local conta com um estacionamento especialmente porque aqui é uma aréa movimentada,
+                        podendo ainda cada cliente deixar a sua vaga já reservada e tambem temos parcerias em outros
+                        espaços
+                    </p>
+                </div>
+            </section>
+
+            <section class="faqItems" onclick="toggleFaq(this)">
+                <span>Qual o som do nosso ambiente?<i class="fas fa-plus"></i></span>
+
+                <div class="content_faq hidden">
+                    <p>
+                        Contamos com um som agradavel a todos que incluem Jazz suave, lo-fi, bossa nova e música
+                        acústica tudo em volume baixo para não atrapalhar conversas ou quem está trabalhando.
+                    </p>
+                </div>
+            </section>
+        </section>
+
+        <footer>
+            <img id="wave" src="assets/icons/wave.svg" alt="">
+            <div id="footer-items">
+                <img class="imgF" src="assets/imagens/cafeLeft.png" alt="">
+                <p id="devE">&reg; Desenvolvido por <a id="devems" href="">Emerson santos</a></p>
+                <img class="imgF" src="assets/imagens/cafeRight.png" alt="">
+            </div>
+        </footer>
+
         <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
         <script src='main.js'></script>
 </body>
-
 </html>

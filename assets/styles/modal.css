@@ -94,6 +94,12 @@
     cursor: pointer;
 }
 
+@media (max-width: 1700px) {
+    .close {
+        top: 60px;
+    }
+}
+
 @media (max-width: 600px) {
     .modalImgs {
         display: grid;
@@ -108,5 +114,9 @@
 
     .modal-content {
         width: 100%;
+    }
+
+    .close {
+        top: 55px;
     }
 }
