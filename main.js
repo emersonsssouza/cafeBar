@@ -59,11 +59,13 @@ ScrollReveal().reveal('.faqItems', {
     duration: 3000,
     distance: '20%',
 });
-ScrollReveal().reveal('#devE', {
-    origin: 'bottom',
-    duration: 3000,
-    distance: '20%',
-});
+if (window.matchMedia('(min-width: 451px)').matches) {
+    ScrollReveal().reveal('#devE', {
+        origin: 'bottom',
+        duration: 3000,
+        distance: '20%',
+    });
+}
 ScrollReveal().reveal('.imgF', {
     origin: 'bottom',
     duration: 3000,
